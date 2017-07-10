@@ -9,5 +9,14 @@
 #import <ScreenSaver/ScreenSaver.h>
 
 @interface OffworldView : ScreenSaverView
+{
+    IBOutlet id configSheet;
+    IBOutlet id drawFilledShapesOption;
+    IBOutlet id drawOutlinedShapesOption;
+    IBOutlet id drawBothOption;
+    
+    BOOL mDrawBackground;
+    NSBundle *mBundle;
+}
 
 @end
