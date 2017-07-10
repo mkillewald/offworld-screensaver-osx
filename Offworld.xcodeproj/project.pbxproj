@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4DD45C361E9D696E0041EFC0 /* OffworldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD45C351E9D696E0041EFC0 /* OffworldView.h */; };
 		4DD45C381E9D696E0041EFC0 /* OffworldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD45C371E9D696E0041EFC0 /* OffworldView.m */; };
+		4DD45C441E9E6D860041EFC0 /* ConfigureSheet.nib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD45C431E9E6D860041EFC0 /* ConfigureSheet.nib */; };
+		4DD45C961EA142160041EFC0 /* OffworldLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DD45C981EA142160041EFC0 /* OffworldLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		4DD45C351E9D696E0041EFC0 /* OffworldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OffworldView.h; sourceTree = "<group>"; };
 		4DD45C371E9D696E0041EFC0 /* OffworldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OffworldView.m; sourceTree = "<group>"; };
 		4DD45C391E9D696E0041EFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DD45C431E9E6D860041EFC0 /* ConfigureSheet.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ConfigureSheet.nib; sourceTree = "<group>"; };
+		4DD45C971EA142160041EFC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/OffworldLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 				4DD45C351E9D696E0041EFC0 /* OffworldView.h */,
 				4DD45C371E9D696E0041EFC0 /* OffworldView.m */,
 				4DD45C391E9D696E0041EFC0 /* Info.plist */,
+				4DD45C431E9E6D860041EFC0 /* ConfigureSheet.nib */,
+				4DD45C981EA142160041EFC0 /* OffworldLogo.png */,
 			);
 			path = Offworld;
 			sourceTree = "<group>";
@@ -125,6 +131,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD45C441E9E6D860041EFC0 /* ConfigureSheet.nib in Resources */,
+				4DD45C961EA142160041EFC0 /* OffworldLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +148,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4DD45C981EA142160041EFC0 /* OffworldLogo.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DD45C971EA142160041EFC0 /* en */,
+			);
+			name = OffworldLogo.png;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4DD45C3A1E9D696E0041EFC0 /* Debug */ = {
@@ -234,12 +253,14 @@
 		4DD45C3D1E9D696E0041EFC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2XM2MCTE5S;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Offworld/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gameaholix.Offworld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -247,12 +268,14 @@
 		4DD45C3E1E9D696E0041EFC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2XM2MCTE5S;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Offworld/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gameaholix.Offworld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
@@ -276,6 +299,7 @@
 				4DD45C3E1E9D696E0041EFC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
